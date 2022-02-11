@@ -23,4 +23,4 @@ class CustomImageDataset(Dataset):
         if self.target_transform:
             label = self.target_transform(label)
         sample = {"Image": image, "label": label}
-        return sample
+        return sample()
